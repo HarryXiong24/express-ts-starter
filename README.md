@@ -274,7 +274,7 @@ In that file you'll find two sections:
 | express      | Node.js web framework.                      |
 | winston      | Logging library                             |
 
-## `devDependencies`
+### devDependencies
 
 | Package      | Description                                                             |
 | ------------ | ----------------------------------------------------------------------- |

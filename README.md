@@ -263,7 +263,7 @@ Notice that ESLint is not a part of the main watch task.
 Dependencies are managed through `package.json`.
 In that file you'll find two sections:
 
-## `dependencies`
+### dependencies
 
 | Package      | Description                                 |
 | ------------ | ------------------------------------------- |

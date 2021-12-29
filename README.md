@@ -13,20 +13,20 @@ This is a starter project for express projects using typescript.
 
 - Clone the repository
 
-```
+```bash
 git clone <.git-path>
 ```
 
 - Install dependencies
 
-```
+```bash
 cd img-compare-be
 npm install
 ```
 
 - Build and run the project
 
-```
+```bash
 npm run build
 npm start
 ```
@@ -251,7 +251,7 @@ In this project, we are using a fairly basic set of rules with no additional cus
 Like the rest of our build steps, we use npm scripts to invoke ESLint.
 To run ESLint you can call the main build script or just the ESLint task.
 
-```
+```bash
 npm run build   // runs full build including ESLint
 npm run lint    // runs only ESLint
 ```

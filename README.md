@@ -257,36 +257,3 @@ npm run lint    // runs only ESLint
 ```
 
 Notice that ESLint is not a part of the main watch task.
-
-## Dependencies
-
-Dependencies are managed through `package.json`.
-In that file you'll find two sections:
-
-### dependencies
-
-| Package      | Description                                 |
-| ------------ | ------------------------------------------- |
-| body-parser  | Express 4 middleware.                       |
-| compression  | Express 4 middleware.                       |
-| dotenv       | Loads environment variables from .env file. |
-| errorhandler | Express 4 middleware.                       |
-| express      | Node.js web framework.                      |
-| winston      | Logging library                             |
-
-### devDependencies
-
-| Package      | Description                                                             |
-| ------------ | ----------------------------------------------------------------------- |
-| @types       | Dependencies in this folder are `.d.ts` files used to provide types     |
-| chai         | Testing utility library that makes it easier to write tests             |
-| concurrently | Utility that manages multiple concurrent tasks. Used with npm scripts   |
-| jest         | Testing library for JavaScript.                                         |
-| nodemon      | Utility that automatically restarts node process when it crashes        |
-| supertest    | HTTP assertion library.                                                 |
-| ts-jest      | A preprocessor with sourcemap support to help use TypeScript with Jest. |
-| ts-node      | Enables directly running TS files. Used to run `copy-static-assets.ts`  |
-| eslint       | Linter for JavaScript and TypeScript files                              |
-| typescript   | JavaScript compiler/type checker that boosts JavaScript productivity    |
-
-To install or update these dependencies you can use `npm install` or `npm update`.

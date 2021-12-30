@@ -8,7 +8,7 @@ const router = express.Router();
 // get
 router.get('/', index.getInfo);
 // post
-router.get('/login', index.doLogin);
+router.post('/login', index.doLogin);
 
 // 处理其他没有定义的请求
 router.all('*', (req, res) => {

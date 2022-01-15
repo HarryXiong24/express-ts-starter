@@ -8,7 +8,7 @@ const options: LoggerOptions = {
   ],
 };
 
-const logger = new Logger(options);
+export const logger = new Logger(options);
 
 if (process.env.NODE_ENV !== 'production') {
   logger.debug('Logging initialized at debug level');

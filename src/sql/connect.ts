@@ -1,10 +1,10 @@
 import mysql from 'mysql';
 
-export function connect(options: string | mysql.ConnectionConfig): mysql.Connection {
+export const connect = (options: string | mysql.ConnectionConfig): mysql.Connection => {
   const connect = mysql.createConnection(options);
 
   // 建立连接
-  connect.connect((err) => {
+  connect.connect((err: mysql.MysqlError) => {
     // 如果建立连接失败
     if (err) {
       console.log(err);
@@ -14,6 +14,6 @@ export function connect(options: string | mysql.ConnectionConfig): mysql.Connect
   });
 
   return connect;
-}
+};
 
 export default connect;

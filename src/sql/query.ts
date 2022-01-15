@@ -1,7 +1,7 @@
 import mysql from 'mysql';
 
 // 数据库查询方法
-export function SQLQuery(target: mysql.Connection, SQL: any, values?: any) {
+export const SQLQuery = (target: mysql.Connection, SQL: string | mysql.QueryOptions, values?: any) => {
   return new Promise(function (resolve, reject) {
     target.query(SQL, values, (err, results) => {
       if (err) {
@@ -11,6 +11,6 @@ export function SQLQuery(target: mysql.Connection, SQL: any, values?: any) {
       }
     });
   });
-}
+};
 
 export default SQLQuery;

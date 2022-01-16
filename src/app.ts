@@ -7,8 +7,8 @@ import errorHandler from 'errorhandler';
 import cors from 'cors';
 import path from 'path';
 // SQL
-// import options from './sql/config';
-// import connect from './sql/connect';
+import options from './sql/config';
+import connect from './sql/connect';
 // token
 import { verifyToken } from './utils/token';
 // Routers
@@ -31,8 +31,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // SQL
-// const mysql = connect(options);
-// app.set('mysql', mysql);
+const mysql = connect(options);
+app.set('mysql', mysql);
 
 // 静态目录配置
 app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }));

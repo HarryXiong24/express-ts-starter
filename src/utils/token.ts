@@ -14,7 +14,7 @@ export const generateToken = (payload: Record<string, any>) => {
 // 验证token
 export const verifyToken = (req: Request, res: Response, next: NextFunction) => {
   const token = req.headers.authorization;
-  jwt.verify(token, secretKey, (err: any, decoded: any) => {
+  jwt.verify(token as string, secretKey, (err: any, decoded: any) => {
     if (err) {
       console.log('verify token error', err);
       return res.json({ code: '404', msg: 'token无效' });
